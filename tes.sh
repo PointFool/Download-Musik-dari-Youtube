@@ -4,7 +4,7 @@
 
 yt="youtube-dl -x --audio-format"
 r="-o %(title)s.%(ext)s"
-path="$HOME/youtube-dl/"
+path="/data/data/com.termux/files/home/storage/shared/youtube-dl/"
 
 
 trap ctrl_c INT
@@ -21,8 +21,25 @@ echo -e "Buset ngaku"
 exit
 }
 
+echo "Cek Storage"
+cd /data/data/com.termux/files/home/storage/ > /dev/null 2>&1
+  if [ "$?" -eq "0" ]
+  
+then
+
+    echo [✔]-[storage]: MANTAP!;
+    
+else
+
+   echo [x]-[storage]: Kasih akses duls!;
+   echo ""
+   termux-setup-storage
+   echo ""
+   sleep 2
+fi
+
 echo "Cek folder"
-cd $HOME/youtube-dl/ > /dev/null 2>&1
+cd /data/data/com.termux/files/home/storage/shared/youtube-dl/ > /dev/null 2>&1
   if [ "$?" -eq "0" ]
   
 then
@@ -32,7 +49,8 @@ then
 else
    
    echo [x]-[folder]: Bikin duls!;
-   mkdir youtube-dl
+   echo ""
+   mkdir /data/data/com.termux/files/home/storage/shared/youtube-dl
    echo ""
    sleep 2
 fi
@@ -55,21 +73,61 @@ else
 fi
 
 echo ""
+echo "python"
+which python > /dev/null 2>&1
+      if [ "$?" -eq "0" ]; 
+
+then
+
+      echo [✔]-[Python]: MANTAP;
+
+else
+
+   echo [x]-[warning]: butuh Python gan;
+   echo ""
+   echo [!]-[bentar]: Tungguin .... ;
+   apt update
+   apt install python
+   echo ""
+   sleep 2
+fi
+sleep 2
+
+echo ""
+echo "ffmpeg"
+which ffmpeg > /dev/null 2>&1
+      if [ "$?" -eq "0" ]; 
+
+then
+
+      echo [✔]-[ffmpeg]: MANTAP;
+
+else
+
+   echo [x]-[warning]: butuh ffmpeg gan;
+   echo ""
+   echo [!]-[bentar]: Tungguin .... ;
+   apt install ffmpeg
+   echo ""
+   sleep 2
+fi
+sleep 2
+
+echo ""
 echo "youtube-dl"
 which youtube-dl > /dev/null 2>&1
       if [ "$?" -eq "0" ]; 
 
 then
 
-      echo [✔]-[youtube-dl]: MANTAP!;
+      echo [✔]-[youtube-dl]: MANTAP;
 
 else
 
-   echo [x]-[warning]: butuh Youtube-dl gan!!!;
+   echo [x]-[warning]: butuh Youtube-dl gan;
    echo ""
-   echo [!]-[bentar]: Tungguin;
-   apt update
-   apt install youtube-dl
+   echo [!]-[bentar]: Tungguin .... ;
+   pip install youtube-dl
    echo ""
    sleep 2
 fi
