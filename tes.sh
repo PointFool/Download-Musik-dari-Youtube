@@ -138,7 +138,7 @@ clear
 echo " Download Lagu dari Youtube ";
 echo " by : Muhammad Saddam Khadafi";
 echo ""
-read -p "link : " link
+read -p "Enter link : " link
 echo ""
 echo " Mau pakai format lagu apa? : ";
 echo
