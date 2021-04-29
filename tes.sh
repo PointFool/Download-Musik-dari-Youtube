@@ -10,14 +10,14 @@ path="/data/data/com.termux/files/home/storage/shared/youtube-dl/"
 trap ctrl_c INT
 ctrl_c() {
 clear
-echo -e "(Ctrl + C) Detected, Trying To Exit ..."
+echo "(Ctrl + C) Detected, Trying To Exit ..."
 sleep 1
 echo ""
-echo -e "Thank You"
+echo "Thank You"
 echo ""
-echo -e "AKU WIBU DAN AKU BANGGA"
+echo "AKU WIBU DAN AKU BANGGA"
 echo ""
-echo -e "Buset ngaku"
+echo "Buset ngaku"
 exit
 }
 
@@ -38,6 +38,7 @@ else
    sleep 2
 fi
 
+echo ""
 echo "Cek folder"
 cd /data/data/com.termux/files/home/storage/shared/youtube-dl/ > /dev/null 2>&1
   if [ "$?" -eq "0" ]
@@ -137,9 +138,8 @@ clear
 echo " Download Lagu dari Youtube ";
 echo " by : Muhammad Saddam Khadafi";
 echo ""
-echo -ne " link : ";
-read link
-echo
+read -p "link : " link
+echo ""
 echo " Mau pakai format lagu apa? : ";
 echo
 echo " 1) Mp3 "
