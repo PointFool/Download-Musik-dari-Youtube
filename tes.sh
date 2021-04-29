@@ -87,8 +87,8 @@ else
    echo [x]-[warning]: butuh Python gan;
    echo ""
    echo [!]-[bentar]: Tungguin .... ;
-   apt update
-   apt install python
+   pkg update
+   pkg install python -y
    echo ""
    sleep 2
 fi
@@ -108,7 +108,7 @@ else
    echo [x]-[warning]: butuh ffmpeg gan;
    echo ""
    echo [!]-[bentar]: Tungguin .... ;
-   apt install ffmpeg
+   pkg install ffmpeg -y
    echo ""
    sleep 2
 fi
