@@ -16,6 +16,6 @@ Setelah itu download scriptnya
 
 jalankan scriptnya
 
-    sh tes.sh
+    sh yt.sh
 
 Menerima kritik & saran :') 
