@@ -17,5 +17,3 @@ Setelah itu download scriptnya
 jalankan scriptnya
 
     sh yt.sh
-
-Menerima kritik & saran :') 
