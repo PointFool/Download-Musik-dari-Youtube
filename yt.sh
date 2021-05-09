@@ -138,7 +138,7 @@ sleep 2
 clear
 
 echo " Download Lagu dari Youtube ";
-echo " by : Muhammad Saddam Khadafi";
+echo " by : PointFool";
 echo ""
 read -p "link -> " link
 echo ""
