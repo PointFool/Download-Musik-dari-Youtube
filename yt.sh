@@ -161,6 +161,7 @@ case $format in
 	mv *.mp3 $path
 	clear
 	echo " Done "
+	sleep 1
 ;;
 
 2)
@@ -168,6 +169,7 @@ case $format in
 	mv *.opus $path
 	clear
 	echo " Done "
+	sleep 1
 ;;
 
 3)
@@ -175,6 +177,7 @@ case $format in
 	mv *.m4a $path
 	clear
 	echo " Done "
+	sleep 1
 ;;
 
 4)
@@ -182,6 +185,7 @@ case $format in
 	mv *.ogg $path
 	clear
 	echo " Done "
+	sleep 1
 ;;
 
 5)
@@ -189,6 +193,7 @@ case $format in
 	mv *.wav $path
 	clear
 	echo " Done "
+	sleep 1
 ;;
 
 6)
@@ -196,11 +201,12 @@ case $format in
 	mv *.flac $path
 	clear
 	echo " Done "
+	sleep 1
 ;;
 
 *)
 	echo "Salah input gan :D"
-	sleep 2
+	sleep 1
 	clear
 ;;
 
