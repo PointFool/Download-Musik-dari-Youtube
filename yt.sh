@@ -63,13 +63,13 @@ ping -c 1 google.com > /dev/null 2>&1
 then
 
     echo [x]-[WADOOO]: Nyambung inet duls gan!!!;
-    sleep 2
+    sleep 1
     exit
     
 else
 
     echo [✔]-[Internet]: MANTAP!;
-    sleep 2
+    sleep 1
 fi
 
 echo ""
