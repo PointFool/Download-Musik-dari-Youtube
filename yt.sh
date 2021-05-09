@@ -38,6 +38,7 @@ else
    sleep 2
 fi
 
+echo ""
 echo "Cek folder"
 cd /data/data/com.termux/files/home/storage/shared/youtube-dl/ > /dev/null 2>&1
   if [ "$?" -eq "0" ]
