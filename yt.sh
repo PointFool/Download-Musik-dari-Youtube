@@ -80,7 +80,7 @@ which python > /dev/null 2>&1
 
 then
 
-      echo [✔]-[Python]: MANTAP;
+      echo [✔]-[Python]: MANTAP!;
 
 else
 
@@ -101,7 +101,7 @@ which ffmpeg > /dev/null 2>&1
 
 then
 
-      echo [✔]-[ffmpeg]: MANTAP;
+      echo [✔]-[ffmpeg]: MANTAP!;
 
 else
 
@@ -121,7 +121,7 @@ which youtube-dl > /dev/null 2>&1
 
 then
 
-      echo [✔]-[youtube-dl]: MANTAP;
+      echo [✔]-[youtube-dl]: MANTAP!;
 
 else
 
