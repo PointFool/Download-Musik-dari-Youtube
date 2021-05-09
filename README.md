@@ -11,6 +11,7 @@ Buka termux lalu install git
 Setelah itu download scriptnya 
 
     git clone https://github.com/PointFool/Download-Musik-dari-Youtube-Termux.git
+    
     cd yt/
 
 jalankan scriptnya
