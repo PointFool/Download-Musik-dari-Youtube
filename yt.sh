@@ -10,16 +10,18 @@ path="/data/data/com.termux/files/home/storage/shared/youtube-dl/"
 trap ctrl_c INT
 ctrl_c() {
 clear
-echo -e "(Ctrl + C) Detected, Trying To Exit ..."
+echo "(Ctrl + C) Detected, Trying To Exit ..."
 sleep 1
 echo ""
-echo -e "Thank You"
+echo "Thank You"
 echo ""
-echo -e "AKU WIBU DAN AKU BANGGA"
+echo "AKU WIBU DAN AKU BANGGA"
 echo ""
-echo -e "Buset ngaku"
+echo "Buset ngaku"
 exit
 }
+
+#Mengecek :'v
 
 echo "Cek Storage"
 cd /data/data/com.termux/files/home/storage/ > /dev/null 2>&1
