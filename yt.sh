@@ -37,7 +37,7 @@ else
    echo ""
    termux-setup-storage
    echo ""
-   sleep 2
+   sleep 1
 fi
 
 echo ""
@@ -55,7 +55,7 @@ else
    echo ""
    mkdir /data/data/com.termux/files/home/storage/shared/youtube-dl
    echo ""
-   sleep 2
+   sleep 1
 fi
 
 echo ""
@@ -92,7 +92,7 @@ else
    apt update
    apt install python
    echo ""
-   sleep 2
+   sleep 1
 fi
 sleep 2
 
@@ -112,7 +112,7 @@ else
    echo [!]-[bentar]: Tungguin .... ;
    apt install ffmpeg
    echo ""
-   sleep 2
+   sleep 1
 fi
 sleep 2
 
@@ -132,7 +132,7 @@ else
    echo [!]-[bentar]: Tungguin .... ;
    pip install youtube-dl
    echo ""
-   sleep 2
+   sleep 1
 fi
 sleep 2
 clear
@@ -140,7 +140,7 @@ clear
 echo " Download Lagu dari Youtube ";
 echo " by : PointFool";
 echo ""
-read -p "link -> " link
+read -p "  Enter link -> " link
 echo ""
 echo " Mau pakai format lagu apa? : ";
 echo ""
@@ -151,7 +151,7 @@ echo " 4) Vorbis (Ogg) "
 echo " 5) Wav "
 echo " 6) Flac "
 echo ""
-read -p "Pilih -> " format
+read -p "  Pilih -> " format
 echo
 
 case $format in
