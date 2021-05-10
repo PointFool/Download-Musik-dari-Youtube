@@ -6,6 +6,7 @@ yt="youtube-dl -x --audio-format"
 r="-o %(title)s.%(ext)s"
 path="/data/data/com.termux/files/home/storage/shared/youtube-dl/"
 
+#ontong jail lu :'v
 
 trap ctrl_c INT
 ctrl_c() {
@@ -37,7 +38,7 @@ else
    echo ""
    termux-setup-storage
    echo ""
-   sleep 1
+   sleep 2
 fi
 
 echo ""
