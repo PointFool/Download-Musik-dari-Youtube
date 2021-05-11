@@ -207,8 +207,7 @@ case $format in
 
 *)
 	echo "Salah input gan :D"
-	sleep 1
-	clear
+	sleep 2
 ;;
 
 esac
