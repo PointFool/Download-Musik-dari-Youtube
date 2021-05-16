@@ -28,7 +28,7 @@ clear
 echo "Cek Storage"
 cd /data/data/com.termux/files/home/storage/ > /dev/null 2>&1
     if [ "$?" -eq "0" ]; then
-        echo "[✓]Mantap[✓]";
+        echo "[✓]Mantap![✓]";
 else
     echo "[+]Kasih akses dulu![+]";
     echo ""
@@ -40,7 +40,7 @@ fi
 echo ""
 echo "Cek Folder";
     if [ -d "/data/data/com.termux/files/home/storage/shared/youtube-dl" ]; then
-        echo "[✓] Mantap [✓]";
+        echo "[✓]Mantap![✓]";
 else
     echo "[+]Folder tidak ada[+]";
     mkdir /data/data/com.termux/files/home/storage/shared/youtube-dl
@@ -109,12 +109,12 @@ clear
 sleep 1
 
 echo "Mau pakai format apa? : ";
-echo "1 : mp3";
-echo "2 : opus";
-echo "3 : m4a";
-echo "4 : ogg";
-echo "5 : wav";
-echo "6 : flac";
+echo "1) mp3";
+echo "2) opus";
+echo "3) m4a";
+echo "4) ogg";
+echo "5) wav";
+echo "6) flac";
 echo ""
 read -p "Pilih > " format
 
