@@ -75,7 +75,7 @@ else
     echo "[+]ffmpeg tidak tersedia![+]";
     echo ""
     echo "[!]Tunggu[!]";
-    apt install ffmpeg
+    apt install ffmpeg -y
     echo ""
     sleep 2
 fi
