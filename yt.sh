@@ -144,7 +144,7 @@ echo " Download Lagu dari Youtube ";
 echo "      by : PointFool";
 echo " ========================== ";
 echo ""
-read -p "  Enter link -> " link
+read -p "Link -> " link
 clear
 
 echo " Mau pakai format lagu apa? : ";
@@ -156,7 +156,7 @@ echo " 4) Vorbis (Ogg) "
 echo " 5) Wav "
 echo " 6) Flac "
 echo ""
-read -p " Pilih -> " format
+read -p "Pilih -> " format
 echo
 
 case $format in
