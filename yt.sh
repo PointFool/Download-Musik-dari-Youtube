@@ -106,9 +106,9 @@ echo ""
 read -p "Link > " link
 echo ""
 clear
-sleep 1
 
 echo "Mau pakai format apa? : ";
+echo ""
 echo "1) mp3";
 echo "2) opus";
 echo "3) m4a";
