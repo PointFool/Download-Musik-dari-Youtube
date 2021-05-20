@@ -115,6 +115,7 @@ echo "3) m4a";
 echo "4) ogg";
 echo "5) wav";
 echo "6) flac";
+echo "7) best (best quality)";
 echo ""
 read -p "Pilih > " format
 
@@ -223,6 +224,26 @@ elif [ $format = 6 ]; then
     clear
     $yt flac $link $r
     mv *.flac $path
+    clear
+    echo "done";
+    read -p "Wanna Back To Main Menu [ Y / n ] : " check6
+if [ $check6 = "Y" ]; then
+cd /data/data/com.termux/files/home/Download-Musik-dari-Youtube-Termux/ && sh yt.sh
+elif [ $check6 = "y" ]; then
+cd /data/data/com.termux/files/home/Download-Musik-dari-Youtube-Termux/ && sh yt.sh
+elif [ $check6 = "Yes" ]; then
+cd /data/data/com.termux/files/home/Download-Musik-dari-Youtube-Termux && sh yt.sh
+elif [ $check6 = "yes" ]; then
+cd /data/data/com.termux/files/home/Download-Musik-dari-Youtube-Termux && sh yt.sh
+elif [ $check6 = "YES" ]; then
+cd /data/data/com.termux/files/home/Download-Musik-dari-Youtube-Termux && sh yt.sh
+else
+exit 1
+fi
+elif [ $format = 7 ]; then
+    clear
+    $yt best $link $r
+    mv *.* $path
     clear
     echo "done";
     read -p "Wanna Back To Main Menu [ Y / n ] : " check6
