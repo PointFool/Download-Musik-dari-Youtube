@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cc='mv yt.sh /data/data/com.termux/files/usr/bin/ && chmod +x /data/data/com.termux/files/usr/bin/yt'
+cc='mv yt /data/data/com.termux/files/usr/bin/ && chmod +x /data/data/com.termux/files/usr/bin/yt'
 
 echo "install";
 echo ""
