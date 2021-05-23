@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cc='mv *.* /data/data/com.termux/files/usr/bin/yt && chmod +x /data/data/com.termux/files/usr/bin/yt'
+
 echo "install";
 echo ""
 echo "WAIT GAN";
@@ -65,9 +67,7 @@ else
     echo ""
     sleep 1
 fi
-sleep 3
-echo "Emot batu";
-mv yt.sh /data/data/com.termux/files/usr/bin/yt
-chmod +x /data/data/com.termux/files/usr/bin/yt
+echo "mindahin file"
+$cc
 echo "Done";
 sleep 2
