@@ -14,7 +14,11 @@ Setelah itu download scriptnya
     
     cd Download-Musik-dari-Youtube-Termux/
     
-    sh install.sh
+Pindahkan File yt.sh
+
+    mv yt.sh /data/data/com.termux/files/usr/bin/yt
+    
+    chmod +x /data/data/com.termux/files/usr/bin/yt
 
 jalankan scriptnya
 
