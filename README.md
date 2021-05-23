@@ -13,7 +13,9 @@ Setelah itu download scriptnya
     git clone https://github.com/PointFool/Download-Musik-dari-Youtube-Termux.git
     
     cd Download-Musik-dari-Youtube-Termux/
+    
+    sh install.sh
 
 jalankan scriptnya
 
-    sh yt.sh
+    yt
