@@ -130,12 +130,6 @@ if [ $check = "Y" ]; then
 cd /data/data/com.termux/files/home/Download-Musik-dari-Youtube-Termux/ && sh yt.sh
 elif [ $check = "y" ]; then
 cd /data/data/com.termux/files/home/Download-Musik-dari-Youtube-Termux/ && sh yt.sh
-elif [ $check = "Yes" ]; then
-cd /data/data/com.termux/files/home/Download-Musik-dari-Youtube-Termux && sh yt.sh
-elif [ $check = "yes" ]; then
-cd /data/data/com.termux/files/home/Download-Musik-dari-Youtube-Termux && sh yt.sh
-elif [ $check = "YES" ]; then
-cd /data/data/com.termux/files/home/Download-Musik-dari-Youtube-Termux && sh yt.sh
 else
 exit 1
 fi
