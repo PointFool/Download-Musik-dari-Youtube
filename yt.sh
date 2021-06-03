@@ -177,6 +177,7 @@ exit 1
 fi
 elif [ $format = 5 ]; then
     clear
+    echo "============wav============";
     $yt wav $link $r
     mv *.wav $path
     echo "done";
