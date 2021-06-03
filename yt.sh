@@ -26,7 +26,7 @@ exit
 
 clear
 echo "Cek Storage"
-cd /data/data/com.termux/files/home/storage/ > /dev/null 2>&1
+cd /data/data/com.termux/files/home/storage/
     if [ "$?" -eq "0" ]; then
         echo "[✓]Mantap![✓]";
 else
@@ -102,7 +102,7 @@ echo "   Download Musik dari Youtube";
 echo "         by : PointFool";
 echo "===================================";
 echo ""
-read -p "Link > " link
+read -p "Enter YouTube Link > " link
 echo ""
 clear
 
@@ -114,7 +114,7 @@ echo "3) m4a";
 echo "4) ogg";
 echo "5) wav";
 echo "6) flac";
-echo "7) best (best quality)";
+echo "7) Best audio quality";
 echo ""
 read -p "Pilih > " format
 
@@ -127,9 +127,9 @@ read -p "Pilih > " format
     echo "done";
     read -p "Wanna Back To Main Menu [ Y / n ] : " check
 if [ $check = "Y" ]; then
-cd /data/data/com.termux/files/home/Download-Musik-dari-Youtube-Termux/ && sh yt.sh
+yt
 elif [ $check = "y" ]; then
-cd /data/data/com.termux/files/home/Download-Musik-dari-Youtube-Termux/ && sh yt.sh
+yt
 else
 exit 1
 fi
@@ -141,9 +141,9 @@ elif [ $format = 2 ]; then
     echo "done";
     read -p "Wanna Back To Main Menu [ Y / n ] : " check2
 if [ $check2 = "Y" ]; then
-cd /data/data/com.termux/files/home/Download-Musik-dari-Youtube-Termux/ && sh yt.sh
+yt
 elif [ $check2 = "y" ]; then
-cd /data/data/com.termux/files/home/Download-Musik-dari-Youtube-Termux/ && sh yt.sh
+yt
 else
 exit 1
 fi
@@ -155,9 +155,9 @@ elif [ $format = 3 ]; then
     echo "done";
     read -p "Wanna Back To Main Menu [ Y / n ] : " check3
 if [ $check3 = "Y" ]; then
-cd /data/data/com.termux/files/home/Download-Musik-dari-Youtube-Termux/ && sh yt.sh
+yt
 elif [ $check3 = "y" ]; then
-cd /data/data/com.termux/files/home/Download-Musik-dari-Youtube-Termux/ && sh yt.sh
+yt
 else
 exit 1
 fi
@@ -169,9 +169,9 @@ elif [ $format = 4 ]; then
     echo "done";
     read -p "Wanna Back To Main Menu [ Y / n ] : " check4
 if [ $check4 = "Y" ]; then
-cd /data/data/com.termux/files/home/Download-Musik-dari-Youtube-Termux/ && sh yt.sh
+yt
 elif [ $check4 = "y" ]; then
-cd /data/data/com.termux/files/home/Download-Musik-dari-Youtube-Termux/ && sh yt.sh
+yt
 else
 exit 1
 fi
@@ -183,9 +183,9 @@ elif [ $format = 5 ]; then
     echo "done";
     read -p "Wanna Back To Main Menu [ Y / n ] : " check5
 if [ $check5 = "Y" ]; then
-cd /data/data/com.termux/files/home/Download-Musik-dari-Youtube-Termux/ && sh yt.sh
+yt
 elif [ $check5 = "y" ]; then
-cd /data/data/com.termux/files/home/Download-Musik-dari-Youtube-Termux/ && sh yt.sh
+yt
 else
 exit 1
 fi
@@ -197,9 +197,9 @@ elif [ $format = 6 ]; then
     echo "done";
     read -p "Wanna Back To Main Menu [ Y / n ] : " check6
 if [ $check6 = "Y" ]; then
-cd /data/data/com.termux/files/home/Download-Musik-dari-Youtube-Termux/ && sh yt.sh
+yt
 elif [ $check6 = "y" ]; then
-cd /data/data/com.termux/files/home/Download-Musik-dari-Youtube-Termux/ && sh yt.sh
+yt
 else
 exit 1
 fi
@@ -211,9 +211,9 @@ elif [ $format = 7 ]; then
     echo "done";
     read -p "Wanna Back To Main Menu [ Y / n ] : " check6
 if [ $check6 = "Y" ]; then
-cd /data/data/com.termux/files/home/Download-Musik-dari-Youtube-Termux/ && sh yt.sh
+yt
 elif [ $check6 = "y" ]; then
-cd /data/data/com.termux/files/home/Download-Musik-dari-Youtube-Termux/ && sh yt.sh
+yt
 else
 exit 1
 fi
