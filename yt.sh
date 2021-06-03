@@ -2,7 +2,7 @@
 
 #variable
 
-yt="youtube-dl -q -x --audio-format"
+yt="youtube-dl -x --audio-format"
 r="-o %(title)s.%(ext)s"
 path="/data/data/com.termux/files/home/storage/shared/youtube-dl/"
 
@@ -123,7 +123,6 @@ read -p "Pilih > " format
     echo "============mp3============";
     $yt mp3 $link $r
     mv *.mp3 $path
-    clear
     echo "done";
     read -p "Wanna Back To Main Menu [ Y / n ] : " check
 if [ $check = "Y" ]; then
