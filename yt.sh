@@ -121,7 +121,7 @@ read -p "Pilih > " format
     if [ $format = 1 ]; then
     clear
     echo "============mp3============";
-    $yt mp3 $link $r
+    $yt mp3 $link $r | grep 'ffmpeg' | cut --complement -c 1-22
     mv *.mp3 $path
     echo "done";
     read -p "Wanna Back To Main Menu [ Y / n ] : " check
@@ -135,7 +135,7 @@ fi
 elif [ $format = 2 ]; then
     clear
     echo "============opus============";
-    $yt opus $link $r
+    $yt opus $link $r | grep 'ffmpeg' | cut --complement -c 1-22
     mv *.opus $path
     echo "done";
     read -p "Wanna Back To Main Menu [ Y / n ] : " check2
@@ -149,7 +149,7 @@ fi
 elif [ $format = 3 ]; then
     clear
     echo "============m4a============";
-    $yt m4a $link $r
+    $yt m4a $link $r | grep 'ffmpeg' | cut --complement -c 1-22
     mv *.m4a $path
     echo "done";
     read -p "Wanna Back To Main Menu [ Y / n ] : " check3
@@ -163,7 +163,7 @@ fi
 elif [ $format = 4 ]; then
     clear
     echo "============vorbis (ogg)============";
-    $yt vorbis $link $r
+    $yt vorbis $link $r | grep 'ffmpeg' | cut --complement -c 1-22
     mv *.ogg $path
     echo "done";
     read -p "Wanna Back To Main Menu [ Y / n ] : " check4
@@ -177,7 +177,7 @@ fi
 elif [ $format = 5 ]; then
     clear
     echo "============wav============";
-    $yt wav $link $r
+    $yt wav $link $r | grep 'ffmpeg' | cut --complement -c 1-22
     mv *.wav $path
     echo "done";
     read -p "Wanna Back To Main Menu [ Y / n ] : " check5
@@ -191,7 +191,7 @@ fi
 elif [ $format = 6 ]; then
     clear
     echo "============flac============";
-    $yt flac $link $r
+    $yt flac $link $r | grep 'ffmpeg' | cut --complement -c 1-22
     mv *.flac $path
     echo "done";
     read -p "Wanna Back To Main Menu [ Y / n ] : " check6
@@ -205,7 +205,7 @@ fi
 elif [ $format = 7 ]; then
     clear
     echo "============BEST============";
-    $yt best $link $r
+    $yt best $link $r | grep 'ffmpeg' | cut --complement -c 1-22
     mv *.* $path
     echo "done";
     read -p "Wanna Back To Main Menu [ Y / n ] : " check6
