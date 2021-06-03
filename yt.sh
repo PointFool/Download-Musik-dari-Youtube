@@ -58,8 +58,8 @@ else
    echo "[+]Python tidak tersedia[+]";
    echo ""
    echo "[!]Tunggu[!]";
-   apt update
-   apt install python
+   pkg update
+   pkg install python -y
    echo ""
    sleep 2
 fi
@@ -75,7 +75,7 @@ else
     echo "[+]ffmpeg tidak tersedia![+]";
     echo ""
     echo "[!]Tunggu[!]";
-    apt install ffmpeg -y
+    pkg install ffmpeg -y
     echo ""
     sleep 2
 fi
